@@ -7,20 +7,24 @@ var app = angular.module("myApp", []);
 
 app.config(function($routeProvider) {
     $routeProvider
-            .when('/home', {
+            .when('/', {
                 controller: 'homeController',
                 templateUrl: 'partials/home.html'
             })
-            .when('/add', {
-                controller: 'addController',
-                templateUrl: 'partials/add.html'
+            .when('/about', {
+                controller: 'aboutController',
+                templateUrl: 'partials/about.html'
             })
-            .when('/fruits/view/:itemId', {
-                controller: 'fruitViewController',
-                templateUrl: 'partials/viewFruit.html'
+            .when('/contact', {
+                controller: 'contactController',
+                templateUrl: 'partials/contact.html'
             })
 });
 
 app.controller("homeController", function($scope){
     $scope.test = "AngularJs bootcamp"
+});
+app.controller("aboutController", function($scope){
+});
+app.controller("contactController", function($scope){
 });
