@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <title>Angular Bootcamp tutorial</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="bootstrap/css/styles.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery-2.1.1.js" type="text/javascript"></script>
+        <script src="js/bootstrap.js" type="text/javascript"></script>
+        <script src="js/angular.min.js" type="text/javascript"></script>
+        <script src="js/script.js" type="text/javascript"></script> 
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                <a href="#" class="navbar-brand">Boostrap tutorials</a>
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".collapseHeader">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse collapseHeader">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#/home">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#contact" data-toggle="modal">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <ng-view>
+        </ng-view>
+    </body>
+</html>
